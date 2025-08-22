@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const CLIENT_ID = '1408502052111515668';
     const WEBHOOK_URL = 'SUA_URL_DO_WEBHOOK_AQUI'; 
     // Certifique-se que esta URL é a mesma que você configurou no Redirect URIs
-    const REDIRECT_URI = window.location.origin + window.location.pathname;
+    const REDIRECT_URI = 'http://localhost:8080/bot/index.html';
 
     // --- ELEMENTOS DO DOM ---
     const loginScreen = document.getElementById('login-screen');
@@ -244,3 +244,4 @@ document.addEventListener('DOMContentLoaded', () => {
     getUrlFragment(); // Verifica se o usuário acabou de ser redirecionado do Discord
 
 });
+
