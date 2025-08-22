@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURAÇÃO ---
     // Substitua pelos seus dados do Discord Developer Portal e Webhook
     const CLIENT_ID = '1408502052111515668';
-    const WEBHOOK_URL = 'SUA_URL_DO_WEBHOOK_AQUI'; 
+    const WEBHOOK_URL = 'https://discordapp.com/api/webhooks/1408505659913146400/XV_NjSY3pxOFaAFIfG-cwvirEQCilUthyrZwvPinfnx_aURk6s8_tjcLfOTQTPtDyuMg'; 
     // Certifique-se que esta URL é a mesma que você configurou no Redirect URIs
     const REDIRECT_URI = 'http://localhost:8080/bot/index.html';
 
@@ -244,4 +244,5 @@ document.addEventListener('DOMContentLoaded', () => {
     getUrlFragment(); // Verifica se o usuário acabou de ser redirecionado do Discord
 
 });
+
 
