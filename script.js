@@ -19,7 +19,7 @@ console.log("URL do Webhook que está sendo usada:", WEBHOOK_URL); // <-- ADICIO
     // --- DADOS DO FORMULÁRIO ---
     const questions = [
         { id: 'characterName', text: 'Nome do seu personagem', required: true, type: 'text' },
-        { id: 'steamId', text: 'ID da sua conta da Steam', required: true, type: 'text' },
+        { id: 'steamId', text: 'ID da sua conta da Steam', required: false, type: 'text' },
         { id: 'age', text: 'Sua idade', required: true, type: 'number' },
         { id: 'inFaction', text: 'Você faz parte de alguma facção atualmente?', required: false, type: 'text' },
         { id: 'factionHistory', text: 'Você tem histórico em facções? Se sim, conte um pouco', required: false, type: 'textarea' },
@@ -245,6 +245,7 @@ console.log("URL do Webhook que está sendo usada:", WEBHOOK_URL); // <-- ADICIO
     getUrlFragment(); // Verifica se o usuário acabou de ser redirecionado do Discord
 
 });
+
 
 
 
