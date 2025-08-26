@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'characterName', text: 'Nome do seu personagem', required: true, type: 'text' },
         { id: 'steamId', text: 'ID da sua conta da Steam', required: false, type: 'text' },
         { id: 'age', text: 'Sua idade', required: true, type: 'number' },
-        { id: 'inFaction', text: 'Você faz parte de alguma facção atualmente?', required: false, type: 'text' },
-        { id: 'factionHistory', text: 'Você tem histórico em facções? Se sim, conte um pouco', required: false, type: 'textarea' },
+        { id: 'inFaction', text: 'Você faz parte de uma staff atualmente?', required: false, type: 'text' },
+        { id: 'factionHistory', text: 'Você tem histórico nas equipes? Se sim, conte um pouco', required: false, type: 'textarea' },
         { id: 'characterStory', text: 'Conte um pouco sobre o personagem que você deseja criar', required: true, type: 'textarea' },
-        { id: 'factionIntent', text: 'Qual a sua intenção ao entrar na nossa facção?', required: false, type: 'textarea' },
+        { id: 'factionIntent', text: 'Qual a sua intenção ao entrar na nossa staff?', required: false, type: 'textarea' },
         { id: 'organizationExpectation', text: 'O que você espera de nossa organização?', required: true, type: 'textarea' },
         { id: 'banHistory', text: 'Você já foi banido ou advertido no servidor? Se sim, por qual motivo?', required: false, type: 'textarea' },
         { id: 'rulesAware', text: 'Está ciente que o descumprimento das regras pode acarretar em punições internas e administrativas?', required: true, type: 'checkbox' }
@@ -248,3 +248,4 @@ document.addEventListener('DOMContentLoaded', () => {
     getUrlFragment(); // Verifica se o usuário acabou de ser redirecionado do Discord
 
 });
+
