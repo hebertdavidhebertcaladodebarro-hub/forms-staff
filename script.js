@@ -2,11 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- CONFIGURAÇÃO ---
     // Substitua pelos seus dados do Discord Developer Portal e Webhook
     const CLIENT_ID = '1408502052111515668';
-    const WEBHOOK_URL = 'https://discord.com/api/webhooks/1408607997407658026/WzmSlUIT1TBZ3YhOy1k7vWnwaEqHYhfLLnhYVoJL-nUMRA_KIPZJs92e2XNFpwepG5vH'; 
-console.log("URL do Webhook que está sendo usada:", WEBHOOK_URL); // <-- ADICIONE ESTA LINHA 
-    // Certifique-se que esta URL é a mesma que você configurou no Redirect URIs
-    const REDIRECT_URI = 'http://localhost:5500/bot/index.html';
+    const WEBHOOK_URL = 'https://discord.com/api/webhooks/1408607997407658026/WzmSlUIT1TBZ3YhOy1k7vWnwaEqHYhfLLnhYVoJL-nUMRA_KIPZJs92e2XNFpwepG5vH';
+    
+    // ATENÇÃO: Substitua 'http://localhost:5500/bot/index.html' pelo seu domínio real.
+    // Exemplo: 'https://seusite.com/bot/index.html'
+    const REDIRECT_URI = window.location.origin + window.location.pathname;
 
+    console.log("URL de redirecionamento que está sendo usada:", REDIRECT_URI);
+    
     // --- ELEMENTOS DO DOM ---
     const loginScreen = document.getElementById('login-screen');
     const formScreen = document.getElementById('form-screen');
@@ -115,7 +118,7 @@ console.log("URL do Webhook que está sendo usada:", WEBHOOK_URL); // <-- ADICIO
                     </div>`;
                 break;
             default:
-                 inputHtml = `<input type="${q.type}" id="${q.id}">`;
+                inputHtml = `<input type="${q.type}" id="${q.id}">`;
         }
 
         questionDiv.innerHTML = `
@@ -245,10 +248,3 @@ console.log("URL do Webhook que está sendo usada:", WEBHOOK_URL); // <-- ADICIO
     getUrlFragment(); // Verifica se o usuário acabou de ser redirecionado do Discord
 
 });
-
-
-
-
-
-
-
